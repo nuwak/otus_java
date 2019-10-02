@@ -24,13 +24,13 @@ import java.util.*;
  * mvn assembly:single
  * mvn clean compile assembly:single
  */
-public class Main {
+public class HelloOtus {
     private static final int MEASURE_COUNT = 1;
 
     public static void main(String... args) {
         List<Integer> example = new ArrayList<>();
         int min = 0;
-        int max = 999_999;
+        int max = 666_666;
         for (int i = min; i < max + 1; i++) {
             example.add(i);
         }
@@ -38,7 +38,6 @@ public class Main {
         List<Integer> result = new ArrayList<>();
         Collections.shuffle(example);
         calcTime(() -> result.addAll(Lists.reverse(example)));
-        System.out.println(result);
     }
 
     private static void calcTime(Runnable runnable) {
