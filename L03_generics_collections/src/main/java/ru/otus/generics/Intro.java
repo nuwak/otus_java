@@ -7,8 +7,6 @@ import java.util.List;
 /**
  * @author sergey
  * created on 23.11.18.
- *
- * Перед запуском закомментируйте содержимое ArrayListDemo::main иначе компилятор выдаст ошибку.
  */
 public class Intro {
 
@@ -45,17 +43,17 @@ public class Intro {
         list.add(2);
         list.add(3);
 
-        summInt(list);
+        sumInt(list);
 
         print(list);
     }
 
-    private void summInt(List<Integer> list) {
-        int summ = 0;
+    private void sumInt(List<Integer> list) {
+        int sum = 0;
         for(int val: list) {  //конкретный тип
-            summ += val;
+            sum += val;
         }
-        System.out.println("\nsumma:" + summ);
+        System.out.println("\nsumma:" + sum);
     }
 
     private <T> void print(List<T> list) {
