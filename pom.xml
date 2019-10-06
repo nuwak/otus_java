@@ -27,6 +27,9 @@
         <developer>
             <name>Vadim Tisov</name>
         </developer>
+        <developer>
+            <name>Igor Bo</name>
+        </developer>
     </developers>
 
     <modules>
@@ -34,11 +37,12 @@
     </modules>
 
     <properties>
+        <java.version>13</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven.compiler.source>12</maven.compiler.source>
-        <maven.compiler.target>12</maven.compiler.target>
+        <maven.compiler.source>${java.version}</maven.compiler.source>
+        <maven.compiler.target>${java.version}</maven.compiler.target>
         <com.google.guava.version>27.1-jre</com.google.guava.version>
-        <my.variable>42</my.variable>
+        <org.apache.maven.plugins>3.1.1</org.apache.maven.plugins>
     </properties>
 
     <dependencyManagement>
@@ -57,7 +61,7 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-assembly-plugin</artifactId>
-                    <version>3.1.1</version>
+                    <version>${org.apache.maven.plugins}</version>
                 </plugin>
             </plugins>
         </pluginManagement>
