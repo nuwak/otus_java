@@ -24,16 +24,15 @@ public class Wildcard_1 {
 
         List<Cat> catList = new ArrayList<>();
         catList.add(new Cat());
-        catList.add( new HomeCat( "Барсик" ) );
-        catList.add( new WildCat( "Багира" ) );
+        catList.add(new HomeCat( "Барсик" ));
+        catList.add(new WildCat( "Багира" ));
 
-//        List<HomeCat> homeCatList = new ArrayList<>(  );
+//        List<HomeCat> homeCatList = new ArrayList<>();
 //
 //        printWild( homeCatList );
 
         //print(catList); //Ошибка
         printWild(catList);
-
     }
 
     private static void print(List<Animal> animalList) {
@@ -42,8 +41,5 @@ public class Wildcard_1 {
 
     private static void printWild(List<? extends Animal> animalList) {
         animalList.forEach(System.out::println);
-
-
     }
-
 }

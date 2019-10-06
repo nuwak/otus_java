@@ -17,7 +17,7 @@ public class GenericsClass<K, V> {
 
     private void print() {
         map.forEach((key, val) -> {
-            System.out.println("key:" + key +" , val:" + val);
+            System.out.println("key:" + key + ", val:" + val);
         });
     }
 

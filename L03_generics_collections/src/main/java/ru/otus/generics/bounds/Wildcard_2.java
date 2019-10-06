@@ -44,7 +44,7 @@ public class Wildcard_2 {
 
     }
 
-    //Unbounded Wildcards
+    /** Unbounded Wildcards */
     private static void printWild(List<?> animalList) {
         //animalList.add("внезапно добавленная строка"); //ошибка
         animalList.forEach(System.out::println);

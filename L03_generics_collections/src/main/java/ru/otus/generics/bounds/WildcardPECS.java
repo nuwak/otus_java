@@ -3,7 +3,6 @@ package ru.otus.generics.bounds;
 import ru.otus.generics.bounds.entries.Animal;
 import ru.otus.generics.bounds.entries.Cat;
 import ru.otus.generics.bounds.entries.HomeCat;
-import ru.otus.generics.bounds.entries.WildCat;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -19,7 +18,7 @@ public class WildcardPECS {
 
         List<Animal> animalList = new ArrayList<>();
         animalList.add(new Animal());
-        //printProducer(animalList); //ошибка
+//        printProducer(animalList); //ошибка
         printConsumer(animalList);
 
         List<Cat> catList = new ArrayList<>();

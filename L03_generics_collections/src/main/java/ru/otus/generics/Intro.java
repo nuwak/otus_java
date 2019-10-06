@@ -2,22 +2,23 @@ package ru.otus.generics;
 
 import java.time.LocalTime;
 import java.util.ArrayList;
-import java.util.LinkedList;
 import java.util.List;
 
 /**
  * @author sergey
  * created on 23.11.18.
+ *
+ * Перед запуском закомментируйте содержимое ArrayListDemo::main иначе компилятор выдаст ошибку.
  */
 public class Intro {
 
     public static void main(String[] args) {
-         //new Intro().beforGenerics();
+//         new Intro().beforeGenerics();
          new Intro().generics();
     }
 
-    //До Generics
-    private void beforGenerics() {
+    /** До Generics */
+    private void beforeGenerics() {
         List list = new ArrayList();
         list.add(4.0);
         list.add(4L);
@@ -33,7 +34,7 @@ public class Intro {
         }
     }
 
-    //Эра Generics
+    /** Эра Generics */
     private void generics() {
         List<Integer> list = new ArrayList<>();
         //list.add(4.0); //ошибка компиляции
@@ -63,5 +64,4 @@ public class Intro {
             System.out.println(item);
         }
     }
-
 }
